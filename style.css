@@ -4,3 +4,208 @@
   padding: 0;
   font-family: "Inter", sans-serif;
 }
+
+:root {
+  --white: #ffffff;
+  --black1-dark: #0e0e0e;
+  --black2-light: #121212;
+  --gray1-dark: #2e2e2f;
+  --gray2-medium: #4b4b4b;
+  --gray3-light: #a5a5a5;
+}
+
+body {
+  background-color: var(--black1-dark);
+}
+
+header,
+main {
+  width: 550px;
+  margin: 0 auto;
+}
+
+header {
+  color: var(--white);
+  height: 210px;
+  background-image: url("./images/header.png");
+  background-color: var(--black1-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+h1 {
+  font-size: 2.625rem;
+  line-height: 0.57em;
+  font-weight: 800;
+  letter-spacing: -0.045em;
+}
+
+h2 {
+  font-size: 0.875rem;
+  line-height: 1.43em;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 4em;
+}
+
+.film-search-form {
+  text-align: center;
+}
+
+main {
+  background-color: var(--black2-light);
+  display: flex;
+  justify-content: center;
+  /* Only need align items center for initial state, empty watchlist and no data state*/
+  /* align-items: center; */
+}
+
+/* Form styles */
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.search-input,
+.search-btn {
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  position: relative;
+  bottom: -18px;
+}
+
+.search-input {
+  background: url("./images/search.png") center left 1em no-repeat;
+  padding: 0.56em 3em;
+  color: var(--gray3-light);
+  background-color: var(--gray1-dark);
+  border-radius: 0.375em 0 0 0.375em;
+  width: 70%;
+}
+
+.search-input:focus {
+  background: none;
+  background-color: var(--gray1-dark);
+  outline: none;
+}
+
+.search-btn {
+  color: var(--white);
+  background-color: var(--gray2-medium);
+  line-height: 1.25em;
+  padding: 0.56em 1.06em;
+  border-radius: 0px 0.375em 0.375em 0px;
+  cursor: pointer;
+}
+
+/* Initial placeholder styles */
+.initial-placeholder {
+  color: var(--gray1-dark);
+}
+
+.film-reel-image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+}
+
+.initial-placeholder-text {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.25em;
+}
+
+/* Styles for no data state */
+.no-data {
+  width: 70%;
+  text-align: center;
+}
+
+.no-data-text {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.25em;
+  color: var(--gray3-light);
+}
+
+/* Movie item section styles */
+.film-list {
+  padding: 2.75em;
+}
+
+.film {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.375em;
+}
+
+.movie-details {
+  color: var(--white);
+}
+
+.movie-poster {
+  margin: 0 1.25em 0 0;
+}
+
+/* Title and rating line */
+.title-rating,
+.movie-time-genre-add {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.movie-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-right: 0.5em;
+}
+
+.rating-star {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+}
+
+.rating {
+  font-size: 0.75rem;
+}
+
+/* Time, genre and watchlist add line */
+.movie-time-genre-add {
+  font-size: 0.75rem;
+}
+
+.movie-time,
+.movie-genre {
+  margin-right: 1.125em;
+}
+
+.add-icon,
+.remove-icon {
+  margin-right: 0.44em;
+  height: 1em;
+  width: 1em;
+  cursor: pointer;
+}
+
+/* Movie description */
+.movie-description {
+  color: var(--gray3-light);
+  font-size: 0.875rem;
+  line-height: 1.25em;
+}
+
+/* Horizontal rule */
+.film-divider {
+  border: 0.094em solid var(--gray2-medium);
+  margin-bottom: 1.375em;
+}
