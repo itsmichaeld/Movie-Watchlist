@@ -61,6 +61,7 @@ h2 {
 
 main {
   background-color: var(--black2-light);
+  min-height: 700px;
   display: flex;
   justify-content: center;
   /* Only need align items center for initial state, empty watchlist and no data state*/
@@ -208,4 +209,28 @@ form {
 .film-divider {
   border: 0.094em solid var(--gray2-medium);
   margin-bottom: 1.375em;
+}
+
+/* Empty watch list text */
+.empty-watchlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-watchlist-header {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--gray2-medium);
+  margin-bottom: 1em;
+}
+
+.add-to-list-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--white);
 }
