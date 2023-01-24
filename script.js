@@ -6,7 +6,7 @@ let filmIdList = [];
 
 searchBtn.addEventListener("click", function (e) {
   e.preventDefault();
-  fetch(`http://www.omdbapi.com/?apikey=a5474722&s=${searchInput.value}`)
+  fetch(`https://www.omdbapi.com/?apikey=a5474722&s=${searchInput.value}`)
     .then((res) => res.json())
     .then((data) => {
       filmList.innerHTML = "";
