@@ -45,7 +45,7 @@ function add(movie) {
 
 const renderSearchResultsList = function (arr) {
   arr.forEach((id) => {
-    fetch(`http://www.omdbapi.com/?apikey=a5474722&i=${id}`)
+    fetch(`https://www.omdbapi.com/?apikey=a5474722&i=${id}`)
       .then((res) => res.json())
       .then((data) => {
         return (filmList.innerHTML += `<article class="film">
