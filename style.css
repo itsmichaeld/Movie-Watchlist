@@ -16,6 +16,7 @@
 
 body {
   background-color: var(--black1-dark);
+  min-height: 100vh;
 }
 
 header,
@@ -65,7 +66,7 @@ h2 {
 
 main {
   background-color: var(--black2-light);
-  min-height: 700px;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
 }
