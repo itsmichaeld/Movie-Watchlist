@@ -48,6 +48,10 @@ h2 {
   color: var(--white);
 }
 
+.nav-link {
+  text-decoration: none;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-around;
@@ -64,8 +68,6 @@ main {
   min-height: 700px;
   display: flex;
   justify-content: center;
-  /* Only need align items center for initial state, empty watchlist and no data state*/
-  /* align-items: center; */
 }
 
 /* Form styles */
@@ -110,6 +112,9 @@ form {
 /* Initial placeholder styles */
 .initial-placeholder {
   color: var(--gray1-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .film-reel-image {
@@ -126,8 +131,9 @@ form {
 
 /* Styles for no data state */
 .no-data {
-  width: 70%;
+  display: flex;
   text-align: center;
+  height: 100%;
 }
 
 .no-data-text {
@@ -135,13 +141,11 @@ form {
   font-weight: 700;
   line-height: 1.25em;
   color: var(--gray3-light);
+  width: 70%;
+  margin: auto auto;
 }
 
 /* Movie item section styles */
-.film-list {
-  padding: 2.75em;
-}
-
 .film {
   display: flex;
   align-items: center;
@@ -191,6 +195,15 @@ form {
   margin-right: 1.125em;
 }
 
+.watchlist-add-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.watchlist-add-link > p {
+  color: var(--white);
+}
 .add-icon,
 .remove-icon {
   margin-right: 0.44em;
